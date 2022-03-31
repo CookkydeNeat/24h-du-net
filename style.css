@@ -1,0 +1,135 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Calistoga', cursive;
+    font-size: 1em;
+}
+main, aside, header, nav {
+    display: block;
+}
+header{
+    background-color:#27282A ;
+    display: block;
+    position: relative;
+    height: 80px;
+    width: 100%;
+    flex-shrink: 0;
+    z-index: 2;
+}
+header a{
+    color: #FDFBC4;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    line-height: 80px;
+    padding: 0 34px ;
+    font-size:1.5em ;
+    z-index: 5;
+    transition: color 300ms, background-color 300ms, font-size 200ms;
+}
+header a:hover{
+    color: #27282A;
+    background-color:#FDFBC4 ;
+    font-size: 1.6em;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    justify-content: stretch;
+    flex-direction: row;
+}
+aside{
+    background-color: #e9e5e5;
+    background-image: url("img/frise.png");
+    background-repeat: repeat-y;
+    background-size: 120px;
+    background-position: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 140px;
+    min-height: calc(100vh - 80px);
+}
+main{
+    background-color: #e9e5e5;
+    flex-grow: 1;
+    overflow: hidden;
+}
+article{
+    background-color: #27282A;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: box-shadow 100ms , transform 100ms;
+}
+article a{
+    color:#FDFBC4 ;
+    text-decoration: none;
+}
+article{
+    color:#FDFBC4 ;
+    text-decoration: none;
+}
+article h2{
+    display: block;
+    width: fit-content;
+}
+.underline{text-decoration: underline;}
+.blue{
+    color:#59B3D9 ;
+}
+article .link{
+    -webkit-box-shadow: -50px 0px 29px 0px #27282A; 
+    box-shadow: -50px 0px 29px 0px #27282A;
+    color: #59B3D9;
+    text-decoration: none;
+    transition: box-shadow 200ms;
+}
+article .link:hover{
+    -webkit-box-shadow: -50px 0px 29px 10px #27282A; 
+    box-shadow: -50px 0px 29px 10px #27282A;
+}
+article .linknoshadow{
+    color: #59B3D9;
+    text-decoration: none;
+    transition: opacity 200ms;
+}
+.linknoshadow:hover{
+    opacity: 0.8;
+}
+article:hover{
+    -webkit-box-shadow: 15px 15px 25px -5px rgba(39,40,42,0.99); 
+    box-shadow: 15px 15px 25px -5px rgba(39,40,42,0.99);
+    transform: translate(-5px,-5px);
+}
+.title{
+    background-color: #27282A;
+    color:#FDFBC4 ;
+    margin: 50px 100px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+figure{
+    float: right;
+    margin: 0 20px 10px;
+    text-align: center;
+}
+figure img{
+    height: 200px;
+}
+.title,article{
+    position: relative;
+    z-index: 2;
+}
+.bend{
+    position: relative;
+    transform: rotate(-50deg);
+    z-index: 1;
+    top: -250px;
+    right: 50px;
+    float: right;
+}
